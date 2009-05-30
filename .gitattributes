@@ -1,0 +1,4 @@
+* text=auto !eol
+/plugin.xml -text
+public/vertebrer.php -text
+/vertebres_pipelines.php -text
