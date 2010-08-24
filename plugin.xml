@@ -16,5 +16,6 @@
 		<nom>styliser</nom>
 		<inclure>vertebres_pipelines.php</inclure>
 	</pipeline>
+	<categorie>outil</categorie>
 	<necessite id="SPIP" version="[2.1 dev;]" />
 </plugin>
