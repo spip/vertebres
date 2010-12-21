@@ -31,8 +31,7 @@ function vertebrer_sort($fields, $direction)
 {
 	$res = '';
 	foreach($fields as $n => $t) {
-		$tri = $direction
-		. ((sql_test_int($t) OR sql_test_date($r)) ? 'tri_n' : 'tri');
+		$tri = $direction . 'tri';
 
 		$url = vertebrer_sanstri($tri)
 		.  "|parametre_url{" . $tri . ",'" . $n . "'}";
@@ -48,7 +47,7 @@ function vertebrer_sort($fields, $direction)
 function vertebrer_sanstri($sauf='')
 {
 	$url ="";
-	foreach (array('tri', 'tri_n', '_tri', '_tri_n') as $c) {
+	foreach (array('tri', '_tri') as $c) {
 		if ($sauf != $c) $url .= "|$c";
 	}
 	return '|parametre_url{"' . substr($url,1) .'",""}';
@@ -156,7 +155,7 @@ function public_vertebrer_dist($desc)
 		<td></td>$form
 	</tr>
 <BOUCLE1($surnom){pagination} 
-		{par #ENV{tri}}{!par #ENV{_tri}}{par num #ENV{tri_n}}{!par num #ENV{_tri_n}}$crit>
+		{par #ENV{tri}}{!par #ENV{_tri}}$crit>
 	<tr class='[row_(#COMPTEUR_BOUCLE|alterner{'odd','even'})]'>
 		<td style='text-align: right;'>#COMPTEUR_BOUCLE</td>$cell
 	</tr>
