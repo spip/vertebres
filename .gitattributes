@@ -1,6 +1,5 @@
 * text=auto !eol
 images/vertebres-16.png -text
 images/vertebres-32.png -text
-/plugin.xml -text
 public/vertebrer.php -text
 /vertebres_pipelines.php -text
