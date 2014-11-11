@@ -29,5 +29,7 @@ lang/vertebres_ru.php -text
 lang/vertebres_sk.php -text
 prive/squelettes/contenu/vertebres.html -text
 prive/squelettes/top/vertebres.html -text
+prive/themes/spip/images/tables-16.png -text
+prive/themes/spip/images/tables-32.png -text
 public/vertebrer.php -text
 /vertebres_pipelines.php -text
