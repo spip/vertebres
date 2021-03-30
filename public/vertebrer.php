@@ -184,7 +184,7 @@ function public_vertebrer_dist($desc) {
 		"#CACHE{0}
 <B1>
 <h2>[(#GRAND_TOTAL|singulier_ou_pluriel{vertebres:1_donnee,vertebres:nb_donnees})]</h2>
-[<p class='pagination'>(#PAGINATION)</p>]
+[<nav class='pagination'>(#PAGINATION)</nav>]
 <div style='overflow: scroll;overflow-y: auto'>
 <table class='spip'>
 	<thead>
