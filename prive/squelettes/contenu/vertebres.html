@@ -12,7 +12,7 @@
 #SET{radical_old,''}
 <B_t>
 	<div class="toutes_les_tables">
-<BOUCLE_t(POUR){tableau #REM|sql_alltable}{'<br /> '}{par valeur}>
+<BOUCLE_t(DATA){source table, #REM|sql_alltable}{'<br /> '}{par valeur}>
 		[(#SET{radical,#VALEUR|explode{_}|reset})][(#SET{lettre,#VALEUR|explode{_}|table_valeur{1}|initiale})]
 		[(#GET{radical}|!={#GET{radical_old}}|oui)#SET{radical_old,#GET{radical}}<h3>#GET{radical}</h3>]
 		[(#GET{lettre}|!={#GET{lettre_old}}|oui)#SET{lettre_old,#GET{lettre}}<h4>#GET{lettre}</h4>]
