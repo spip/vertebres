@@ -1,7 +1,7 @@
 <paquet
 	prefix="vertebres"
 	categorie="outil"
-	version="1.5.1"
+	version="1.5.2"
 	etat="stable"
 	compatibilite="[4.0.0;4.0.*]"
 	logo="prive/themes/spip/images/vertebres-xx.svg"
